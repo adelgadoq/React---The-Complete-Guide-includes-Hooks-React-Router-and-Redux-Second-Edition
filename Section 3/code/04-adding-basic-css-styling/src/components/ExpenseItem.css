@@ -4,7 +4,6 @@
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   padding: 0.5rem;
-  margin: 1rem 0;
   border-radius: 12px;
   background-color: #4b4b4b;
 }
@@ -35,6 +34,28 @@
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
+  margin: 2rem;
+}
+
+.expense-item__owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  background-color: #005d49;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: orange;
+  font-size: 2rem;
+  font-weight: bold;
+  flex: 0.5;
+}
+
+/* https://stackoverflow.com/questions/10052922/set-space-between-divs */
+div:not(:first-child):not(:last-child) {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 580px) {
